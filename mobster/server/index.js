@@ -9,7 +9,7 @@ app.use(express.json());
 const path = require('path');
 // const router = require('router');
 
-const staticPath = path.join(__dirname, '..', 'client');
+const staticPath = path.join(__dirname, 'client');
 app.use(express.static(staticPath));
 
 app.get('/', (req, res) => {
