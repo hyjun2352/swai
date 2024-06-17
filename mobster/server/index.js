@@ -13,19 +13,19 @@ const staticPath = path.join(__dirname, 'client');
 app.use(express.static(staticPath));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(staticPath, 'html/index.html'));
+    res.sendFile(path.join(staticPath, 'index.html'));
 });
 app.get('/index.html', (req, res) => {
-    res.sendFile(path.join(staticPath, 'html/index.html'));
+    res.sendFile(path.join(staticPath, 'index.html'));
 });
 app.get('/blog.html', (req, res) => {
-    res.sendFile(path.join(staticPath, 'html/blog.html'));
+    res.sendFile(path.join(staticPath, 'blog.html'));
 });
 app.get('/contact.html', (req, res) => {
-    res.sendFile(path.join(staticPath, 'html/contact.html'));
+    res.sendFile(path.join(staticPath, 'contact.html'));
 }); 
 app.get('/about.html', (req, res) => {
-    res.sendFile(path.join(staticPath, 'html/about.html'));
+    res.sendFile(path.join(staticPath, 'about.html'));
 }); 
 // const { getChatCompletion } = require('./chat');
 const { getChatCompletion } = require('./chat');
@@ -52,5 +52,5 @@ app.post('/api/gpt-essay-review', async (req, res) => {
 });
 
 // 서버 실행
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

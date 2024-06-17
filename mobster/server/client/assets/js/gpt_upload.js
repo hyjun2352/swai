@@ -15,7 +15,7 @@ document.getElementById('button-search').addEventListener('click', function() {
     const selectedId = idMap[selectedOption];
 
     // Fetch the JSON file
-    fetch('../assets/data/yonsei_data_all_p.json')
+    fetch('./assets/data/yonsei_data_all_p.json')
     .then(response => response.json())
     .then(data => {
         // Get the container element
@@ -27,10 +27,10 @@ document.getElementById('button-search').addEventListener('click', function() {
             // Create HTML content from the JSON data
             let image1=`<div class="display_none"></div>`, image2=`<div class="display_none"></div>`, add_text1_1=`<div class="display_none"></div>`, add_text1_2=`<div class="display_none"></div>`;
             if (item.id === "24" || item.id === "23"){
-                image1 = `<img src="../assets/img/essay_writing/text_d_${item.id}.png" class="width_100" alt="">`;
+                image1 = `<img src="./assets/img/essay_writing/text_d_${item.id}.png" class="width_100" alt="">`;
                 add_text1_2 = `<p class="mb-4"><strong>[지문 A]</strong> <br> ${item.additional_text_a}</p>`;
             } else {
-                image2 = `<img src="../assets/img/essay_writing/question_2_1_${item.id}.png" class="width_100" alt="">`;
+                image2 = `<img src="./assets/img/essay_writing/question_2_1_${item.id}.png" class="width_100" alt="">`;
                 if (item.id === "22") {
                     add_text1_1 = `<p class="mb-4"><strong>[지문 A]</strong> <br> ${item.additional_text_a}</p>`;
                 }

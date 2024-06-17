@@ -512,7 +512,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function fetchUniversities() {
-        fetch('../assets/data/university_data.json')
+        fetch('./assets/data/university_data.json')
         .then(response => response.json())
         .then(data => {
             const uniqueUniversities = {};

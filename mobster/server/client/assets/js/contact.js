@@ -117,6 +117,7 @@ $("#submit").on("click", function () {
         "id": getUVfromCookie(),
         "email": email,
         "advice": advice,
+        "number": 5,
         "name": name,
         "phone": phone,
     })
