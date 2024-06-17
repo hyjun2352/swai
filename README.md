@@ -5,7 +5,7 @@
     ```
     git clone ${HTTPS}$ 
     ```
-2. openai api key를 https://platform.openai.com/api-keys 이 사이트에서 새로 생성하고, mobster/server 폴더안에 있는 .env 파일에서 "OPENAI_SECRET_KEY" 변수에 넣는다
+2. gpt4o를 활용할 수 있는 openai api key를 https://platform.openai.com/api-keys 사이트에서 새로 생성하고, mobster/server 폴더안에 있는 .env 파일에서 "OPENAI_SECRET_KEY" 변수에 넣는다
 3. terminal의 현재 실행 위치를 조정한다
     ```
     cd swai/mobster/server
